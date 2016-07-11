@@ -1,10 +1,10 @@
 <% @jobs.each do |job| %>
 <div>
   <h1> <%= link_to job.title, job %> </h1>
-  <%= job.company %>
-  <%= job.location %>
-  <%= job.company.name %>
-  <% if job.featured? %>
+  <%= job.company.name %> <br>
+  <%= job.location %> <br>
+  <%= job.company.name %> <br>
+  <% if job.featured? %> <br>
     <strong>Destaque</strong>
   <% end %>
 </div>
