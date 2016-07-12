@@ -4,4 +4,13 @@
 <%= @company.location %> <br>
 <%= @company.mail %> <br>
 <%= @company.phone %> <br>
-<%= link_to "Voltar", root_path %>
+
+<%= link_to "Voltar", root_path %> <br> <br>
+
+
+<% @company.jobs.each do |job| %>
+  <div>
+    <%= job.title %> <br>
+    <%= job.category %> <br>
+  </div>
+<% end %>
