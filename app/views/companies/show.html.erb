@@ -6,9 +6,6 @@
 <%= @company.phone %> <br>
 <%= link_to "Voltar", root_path %>
 
-<% @company.jobs.each do |job| %>
-  <div>
-    <%= job.title %> <br>
-    <%= job.category %> <br>
-  </div>
-<% end %>
+<section id="jobs">
+  <%= render @company.jobs %>
+</section>
