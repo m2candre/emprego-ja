@@ -1,6 +1,19 @@
-.job{
-  border: solid 2px #eee;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 10px;
+// .job{
+//   border: solid 2px #eee;
+//   border-radius: 5px;
+//   padding: 3px;
+//   margin: 3px;
+// }
+
+.job {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    -webkit-transition: border 0.2s ease-in-out;
+    -o-transition: border 0.2s ease-in-out;
+    transition: border 0.2s ease-in-out;
 }

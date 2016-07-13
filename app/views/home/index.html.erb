@@ -1,24 +1,24 @@
-<div class="row">
-  <div class="col-md-9">
-    <section id="jobs">
-      <div class="row">
-        <% @jobs.each do |job| %>
-          <div class="col-md-6">
-            <div class="thumbnail">
-              <%= render job %>
+  <div class="row">
+    <div class="col-md-9">
+      <section id="jobs">
+        <div class="row">
+          <% @jobs.each do |job| %>
+            <div class="col-md-6">
+              <div class="job">
+                <%= render job %>
+              </div>
             </div>
-          </div>
-        <% end %>
-      </div>
-    </section>
-  </div>
+          <% end %>
+        </div>
+      </section>
+    </div>
 
-  <div class="col-md-3">
-    <aside id="companies">
-      <h2>Empresas</h2>
-      <% @companies.each do |company| %>
-        <%= link_to company.name, company %> <br>
-      <% end %>
-    </aside>
+    <div class="col-md-3">
+      <aside id="companies">
+        <h2>Empresas</h2>
+        <% @companies.each do |company| %>
+          <%= link_to company.name, company %> <br>
+        <% end %>
+      </aside>
+    </div>
   </div>
-</div>
