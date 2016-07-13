@@ -6,6 +6,19 @@
 <%= @company.phone %> <br>
 <%= link_to "Voltar", root_path %>
 
-<section id="jobs">
-  <%= render @company.jobs %>
-</section>
+
+<div class="row">
+  <div class="col-md-9">
+    <section id="jobs">
+      <div class="row">
+        <% @company.jobs.each do |job| %>
+          <div class="col-md-6">
+            <div class="job">
+              <%= render job %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </section>
+  </div>
+</div>

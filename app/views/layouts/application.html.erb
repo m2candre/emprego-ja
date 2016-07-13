@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <title>EmpregoJa</title>
     <%= csrf_meta_tags %>
 
@@ -9,13 +10,15 @@
   </head>
 
   <body>
-    <span class="error">
-      <%= notice %>
-    </span>
+    <div class="container">
+      <span class="error">
+        <%= notice %>
+      </span>
 
-    <header>
-      <h1>Emprego Já</h1>
-    </header>
-    <%= yield %>
+      <header>
+        <h1>Emprego Já</h1>
+      </header>
+      <%= yield %>
+    </div>
   </body>
 </html>
