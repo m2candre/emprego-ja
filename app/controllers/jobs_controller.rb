@@ -24,7 +24,6 @@ class JobsController < ApplicationController
   end
 
   def update
-    find_job
     if @job.update_attributes(job_params)
       redirect_to @job
     else
