@@ -1,10 +1,29 @@
 <h1>
   <%= @company.name %>
 </h1>
-<%= @company.location %> <br>
-<%= @company.mail %> <br>
-<%= @company.phone %> <br>
-<%= link_to "Voltar", root_path %>
+
+
+<dl class="dl-horizontal">
+  <dt>
+    Local:</dt>
+  <dd>
+    <%= @company.location %>
+  </dd>
+
+  <dt>Email:</dt>
+  <dd>
+    <%= @company.mail %> <br>
+  </dd>
+
+  <dt>Telefone:</dt>
+  <dd>
+    <%= @company.phone %> <br>
+  </dd>
+
+  <dd>
+    <%= link_to "Voltar", root_path %>
+  </dd>
+</dl>
 
 
 <div class="row">
@@ -12,11 +31,11 @@
     <section id="jobs">
       <div class="row">
         <% @company.jobs.each do |job| %>
-          <div class="col-md-6">
-            <div class="job">
-              <%= render job %>
-            </div>
+        <div class="col-md-6">
+          <div class="job">
+            <%= render job %>
           </div>
+        </div>
         <% end %>
       </div>
     </section>

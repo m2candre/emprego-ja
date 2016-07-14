@@ -1,0 +1,19 @@
+<h1>
+  <%= @category.name %>
+</h1>
+
+<div class="row">
+  <div class="col-md-9">
+    <section id="jobs">
+      <div class="row">
+        <% @category.jobs.each do |job| %>
+          <div class="col-md-6">
+            <div class="job">
+              <%= render job %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </section>
+  </div>
+</div>
