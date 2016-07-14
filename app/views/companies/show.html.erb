@@ -1,5 +1,8 @@
 <h1>
   <%= @company.name %>
+  <% if @company.premium? %>
+    <%= image_tag "estrela.png" %>
+  <% end %>
 </h1>
 
 

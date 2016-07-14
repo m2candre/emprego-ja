@@ -1,13 +1,25 @@
 <h1>Criar Empresa</h1>
 
 <%= form_for @company do |f| %>
-     <%= f.label :name, "Nome" %>
-     <%= f.text_field :name %> <br>
-     <%= f.label :location, 'Local' %>
-     <%= f.text_field :location %> <br>
-     <%= f.label :mail, 'Email' %>
-     <%= f.text_field :mail %> <br>
-     <%= f.label :phone, 'Telefone' %>
-     <%= f.text_field :phone %> <br>
-  <%= f.submit "Criar Empresa"%>
+
+    <div class="form-group">
+       <%= f.label :name, "Nome" %>
+       <%= f.text_field :name, class: "form-control" %>
+    </div>
+    <div class="form-group">
+       <%= f.label :location, 'Local' %>
+       <%= f.text_field :location, class: "form-control" %>
+    </div>
+    <div class="form-group">
+       <%= f.label :mail, 'Email' %>
+       <%= f.text_field :mail, class: "form-control" %>
+    </div>
+    <div class="form-group">
+       <%= f.label :phone, 'Telefone' %>
+       <%= f.text_field :phone, class: "form-control" %>
+    </div>
+
+    <div class="form-group">
+      <%= f.submit "Criar Empresa"%>
+    </div>
 <% end %>
